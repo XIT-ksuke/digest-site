@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub Digest</title>
+<meta name="description" content="GitHubで最近伸びている新しいリポジトリを定期的にまとめ、解説メールと解説動画を自分宛に届ける個人用の自動化ツールです。">
+<style>
+:root{
+  --bg:#f6f8fb; --panel:#ffffff; --fg:#1b222e; --fg-dim:#5a6678;
+  --border:#e2e7ef; --accent:#1b5fb0;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#11151d; --panel:#181e29; --fg:#eef2f8; --fg-dim:#a3aebf;
+         --border:#28313f; --accent:#79b4ff; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);line-height:1.8;
+     font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;}
+.wrap{max-width:680px;margin:0 auto;padding:56px 20px 72px}
+header{margin-bottom:36px}
+h1{font-size:30px;letter-spacing:.01em}
+.tagline{color:var(--fg-dim);margin-top:10px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;
+      padding:22px 24px;margin-bottom:18px}
+h2{font-size:18px;margin-bottom:10px}
+p+p{margin-top:10px}
+ul{margin:8px 0 0 20px}
+li{margin:4px 0}
+.note{font-size:14px;color:var(--fg-dim)}
+footer{margin-top:34px;font-size:14px;color:var(--fg-dim);
+       border-top:1px solid var(--border);padding-top:18px}
+a{color:var(--accent)}
+code{background:rgba(127,140,160,.16);border-radius:4px;padding:1px 6px;font-size:.92em}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>GitHub Digest</h1>
+  <p class="tagline">GitHubで最近伸びている新しいリポジトリを定期的にまとめ、解説メールと解説動画を自分宛に届ける、個人用の自動化ツールです。</p>
+</header>
+
+<div class="card">
+  <h2>何をするものか</h2>
+  <p>数日おきに GitHub の公開APIを検索し、「作成されて日が浅く、スターが一定数以上集まっているリポジトリ」を数件選びます。選んだリポジトリのREADMEをもとに日本語の解説文と短い解説動画（1〜2分）を作り、運用者本人のメールアドレス宛に1通のメールとして届けます。</p>
+  <p>GitHub Actions 上で動く個人用のツールで、一般の利用者に向けて公開しているサービスではありません。アカウント登録もログイン機能もありません。</p>
+</div>
+
+<div class="card">
+  <h2>Google Drive の使い方</h2>
+  <p>生成した解説動画の保存先として、<strong>運用者本人の Google Drive</strong> を使います。利用するのはこのアプリが作成した専用フォルダと、その中のファイルだけです。</p>
+  <ul>
+    <li>権限は <code>drive.file</code> のみ（このアプリが作成したファイルとフォルダに限定されます）</li>
+    <li>本人のDrive内にある他のファイルやフォルダは参照しません</li>
+    <li>保存容量の上限を超えそうなときは、このアプリが作成した古い動画だけを削除します</li>
+    <li>アップロードしたファイルの共有設定は変更しません（本人だけが閲覧できる状態のままです）</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>扱う情報</h2>
+  <p>扱うのは GitHub の公開情報（リポジトリ名、説明、スター数、作成日、README など）と、そこから生成した解説文・動画だけです。閲覧者の情報を集める仕組み、アクセス解析、広告はありません。</p>
+  <p class="note">詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+</div>
+
+<footer>
+  <p><a href="privacy.html">プライバシーポリシー</a></p>
+</footer>
+
+</div>
+</body>
+</html>

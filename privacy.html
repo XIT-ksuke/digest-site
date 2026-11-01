@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>プライバシーポリシー | GitHub Digest</title>
+<meta name="description" content="GitHub Digest のプライバシーポリシー。個人利用のみ。アプリが作成したファイルだけを本人のGoogle Driveで扱い、データを第三者に渡しません。">
+<style>
+:root{
+  --bg:#f6f8fb; --panel:#ffffff; --fg:#1b222e; --fg-dim:#5a6678;
+  --border:#e2e7ef; --accent:#1b5fb0;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#11151d; --panel:#181e29; --fg:#eef2f8; --fg-dim:#a3aebf;
+         --border:#28313f; --accent:#79b4ff; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);line-height:1.85;
+     font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;}
+.wrap{max-width:680px;margin:0 auto;padding:56px 20px 72px}
+header{margin-bottom:30px}
+h1{font-size:26px}
+.updated{color:var(--fg-dim);font-size:14px;margin-top:8px}
+section{background:var(--panel);border:1px solid var(--border);border-radius:12px;
+        padding:22px 24px;margin-bottom:16px}
+h2{font-size:17px;margin-bottom:10px}
+p+p{margin-top:10px}
+ul{margin:8px 0 0 20px}
+li{margin:4px 0}
+footer{margin-top:30px;font-size:14px;color:var(--fg-dim);
+       border-top:1px solid var(--border);padding-top:18px}
+a{color:var(--accent)}
+code{background:rgba(127,140,160,.16);border-radius:4px;padding:1px 6px;font-size:.92em}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>プライバシーポリシー</h1>
+  <p class="updated">GitHub Digest ／ 最終更新日：2026年11月1日</p>
+</header>
+
+<section>
+  <h2>1. このアプリについて</h2>
+  <p>GitHub Digest（以下「本アプリ」）は、個人が自分のためだけに運用している自動化ツールです。一般の利用者に向けて提供しているサービスではなく、利用者登録・ログイン・問い合わせフォームなどの仕組みはありません。</p>
+</section>
+
+<section>
+  <h2>2. 収集する情報</h2>
+  <p>本アプリは、閲覧者や第三者の個人情報を収集しません。</p>
+  <ul>
+    <li>アカウント登録はありません</li>
+    <li>アクセス解析ツール、広告、トラッキング用Cookieは使用していません</li>
+    <li>扱うのは GitHub の公開APIから取得できる公開情報（リポジトリ名、説明、スター数、作成日、READMEなど）と、そこから生成した解説文・動画だけです</li>
+  </ul>
+</section>
+
+<section>
+  <h2>3. Google ユーザーデータの取り扱い</h2>
+  <p>本アプリは、生成した動画の保存先として運用者本人の Google Drive を利用します。要求する権限は <code>drive.file</code> のみで、これは<strong>本アプリが作成したファイルおよびフォルダに限定された権限</strong>です。</p>
+  <ul>
+    <li>本アプリが作成した専用フォルダ以外の、Drive内の既存のファイルやフォルダにはアクセスしません</li>
+    <li>読み取るのは、本アプリが保存した動画のファイル名・サイズ・更新日時・IDだけです（容量管理とリンク生成のために使います）</li>
+    <li>保存容量の上限を超えそうな場合、本アプリが作成した古い動画のみを削除します</li>
+    <li>アップロードしたファイルの共有設定は変更しません（本人だけが閲覧できる状態のままです）</li>
+    <li>取得したデータを学習用途に利用したり、広告に利用したりすることはありません</li>
+  </ul>
+  <p>本アプリによる Google ユーザーデータの利用は、<a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>（限定使用（Limited Use）の要件を含む）に準拠します。</p>
+</section>
+
+<section>
+  <h2>4. 第三者への提供</h2>
+  <p>本アプリが扱うデータを第三者に提供・販売・共有することはありません。生成した解説文・動画・メールは、運用者本人だけが受け取ります。</p>
+</section>
+
+<section>
+  <h2>5. 認証情報の保管</h2>
+  <p>Google Drive やメール送信に使う認証情報は、GitHub Actions の暗号化されたシークレットとして保管し、処理中のログには出力しません。認証情報を外部に送信することはありません。</p>
+</section>
+
+<section>
+  <h2>6. データの削除とアクセス権の取り消し</h2>
+  <p>Google Drive に保存されたファイルは、運用者本人がいつでも Drive 上で削除できます。本アプリへのアクセス権は、Google アカウントのセキュリティ設定（サードパーティ製アプリとサービスとの連携）からいつでも取り消せます。取り消した時点で、本アプリは Drive 上のいかなるデータにもアクセスできなくなります。</p>
+</section>
+
+<section>
+  <h2>7. ポリシーの変更</h2>
+  <p>内容を変更した場合は、このページを更新し、最終更新日を書き換えます。</p>
+</section>
+
+<section>
+  <h2>8. 問い合わせ</h2>
+  <p>本ポリシーに関する連絡は、公開リポジトリの Issue からお願いします。</p>
+  <p><a href="https://github.com/XIT-ksuke/digest-site/issues" rel="noopener">https://github.com/XIT-ksuke/digest-site/issues</a></p>
+</section>
+
+<footer>
+  <p><a href="index.html">GitHub Digest について</a></p>
+</footer>
+
+</div>
+</body>
+</html>
